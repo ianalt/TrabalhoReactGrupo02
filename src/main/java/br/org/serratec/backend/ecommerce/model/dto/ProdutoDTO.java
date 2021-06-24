@@ -30,7 +30,7 @@ public class ProdutoDTO {
 	@NotNull
 	private Integer idFuncionario;
 	private String nomeFuncionario;
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
 	@Past
 	private Date dataFabricacao;
 	
@@ -112,6 +112,7 @@ public class ProdutoDTO {
 		return dataFabricacao;
 	}
 
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
 	public void setDataFabricacao(Date dataFabricacao) {
 		this.dataFabricacao = dataFabricacao;
 	}

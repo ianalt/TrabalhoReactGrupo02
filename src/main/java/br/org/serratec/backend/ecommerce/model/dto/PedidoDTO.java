@@ -16,7 +16,7 @@ public class PedidoDTO {
 
 	private Integer id;
 
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
 	private Date dataPedido;
 
 	private PedidoStatus pedidoStatus;

@@ -38,7 +38,7 @@ public class ClienteDTO {
 	private String email;
 
 	@Past
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
 	private Date dataNascimento;
 
 	@Valid
